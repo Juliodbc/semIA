@@ -1,6 +1,7 @@
 describe('My First Test', () => {
-  it('Visits the app root url', () => {
+  it('shows the sign-in screen', () => {
     cy.visit('/')
-    cy.contains('ion-content', 'Tab 1 page')
+    cy.contains('ion-content', 'Bem-vindo')
+    cy.contains('ion-content', 'Criar uma conta')
   })
 })
